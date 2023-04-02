@@ -124,7 +124,21 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>BwDImw==</data>
+                    <data>BwCbPg==</data>
+                    <key>AAPL00,override-no-connect</key>
+                    <data>AP///////wAmE4AjAAAAAAEfAQOANR54Kvblp1NNmSQUUFS/7wDRz7MAlQCBgIFAgcDRzwEBAjqAGHE4LUBYLEUADyghAAAeAAAA/wAwMDAwMDAwMDAwCiAgAAAA/QAwSx5VFAAKICAgICAgAAAA/ABQU1QyNDBBCiAgICAgAS8=</data>
+                    <key>AAPL01,override-no-connect</key>
+                    <data>AP///////wAmE4AjAAAAAAEfAQOANR54Kvblp1NNmSQUUFS/7wDRz7MAlQCBgIFAgcDRzwEBAjqAGHE4LUBYLEUADyghAAAeAAAA/wAwMDAwMDAwMDAwCiAgAAAA/QAwSx5VFAAKICAgICAgAAAA/ABQU1QyNDBBCiAgICAgAS8=</data>
+                    <key>AAPL02,override-no-connect</key>
+                    <data>AP///////wAmE4AjAAAAAAEfAQOANR54Kvblp1NNmSQUUFS/7wDRz7MAlQCBgIFAgcDRzwEBAjqAGHE4LUBYLEUADyghAAAeAAAA/wAwMDAwMDAwMDAwCiAgAAAA/QAwSx5VFAAKICAgICAgAAAA/ABQU1QyNDBBCiAgICAgAS8=</data>
+                    <key>device-id</key>
+                    <data>mz4AAA==</data>
+                    <key>framebuffer-con0-alldata</key>
+                    <data>AQEJAAAIAADHAwAA</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -210,13 +224,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RealtekRTL8111.kext</string>
+                    <string>IntelMausi.kext</string>
                     <key>Comment</key>
-                    <string>V2.4.2</string>
+                    <string>V1.0.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekRTL8111</string>
+                    <string>Contents/MacOS/IntelMausi</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -751,13 +765,13 @@
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
-                <integer>17</integer>
+                <integer>145</integer>
                 <key>PickerAudioAssist</key>
                 <false/>
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Auto</string>
+                <string>chris1111\MotherShip</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
@@ -877,9 +891,9 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v alcid=23</string>
+                    <string>-v alcid=23 igfxonln=1</string>
                     <key>csr-active-config</key>
-                    <data>AAAAAA==</data>
+                    <data>/w8AAA==</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
@@ -1097,6 +1111,30 @@
                     <false/>
                     <key>Path</key>
                     <string>CrScreenshotDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ResetNvramEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ToggleSipEntry.efi</string>
                 </dict>
             </array>
             <key>Input</key>
